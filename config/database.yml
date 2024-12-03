@@ -1,0 +1,16 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: demo_app_rails_development
+  pool: 5
+  username: yfu_db
+  password: yfu_db
+  host: 127.0.0.1
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: demo_app_rails_test
+  pool: 5
+  username: yfu_db
+  password: yfu_db
+  host: 127.0.0.1
