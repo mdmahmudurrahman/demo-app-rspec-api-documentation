@@ -1,0 +1,45 @@
+{
+  "resource": "Posts",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/posts",
+  "description": "Create a post",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "title",
+      "description": "Title of the post"
+    },
+    {
+      "required": true,
+      "name": "body",
+      "description": "Body of the post"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/posts",
+      "request_body": "{\"title\":\"New Post\",\"body\":\"This is a new post.\",\"post\":{\"title\":\"New Post\",\"body\":\"This is a new post.\",\"user_id\":36}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "[binary data]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

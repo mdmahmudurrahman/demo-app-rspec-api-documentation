@@ -1,0 +1,45 @@
+{
+  "resource": "Admin/Authors",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/admin/authors/:id",
+  "description": "Update an author",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "name",
+      "description": "Name of the author"
+    },
+    {
+      "required": true,
+      "name": "biography",
+      "description": "Biography of the author"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/admin/authors/11",
+      "request_body": "{\"name\":\"Updated Author\",\"biography\":\"Updated biography.\",\"author\":{\"name\":\"Updated Author\",\"biography\":\"Updated biography.\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[binary data]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
