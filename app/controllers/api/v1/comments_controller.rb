@@ -7,15 +7,15 @@ module Api
       # POST /api/v1/posts/:post_id/comments
       def create
         comment = @post.comments.build(comment_params)
-        comment.user = User.find(params[:user_id]) # Associate comment with a user
-
+        comment.user = current_user # Use the authenticated user
+      
         if comment.save
           render json: comment, status: :created
         else
           render json: comment.errors, status: :unprocessable_entity
         end
       end
-
+      
       # DELETE /api/v1/posts/:post_id/comments/:id
       def destroy
         if @comment.destroy

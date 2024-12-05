@@ -1,0 +1,140 @@
+{
+  "resources": [
+    {
+      "name": "Admin/Authors",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create an author",
+          "link": "admin/authors/create_an_author.json",
+          "groups": "all",
+          "route": "/api/v1/admin/authors",
+          "method": "post"
+        },
+        {
+          "description": "Delete an author",
+          "link": "admin/authors/delete_an_author.json",
+          "groups": "all",
+          "route": "/api/v1/admin/authors/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Get an author",
+          "link": "admin/authors/get_an_author.json",
+          "groups": "all",
+          "route": "/api/v1/admin/authors/:id",
+          "method": "get"
+        },
+        {
+          "description": "List all authors",
+          "link": "admin/authors/list_all_authors.json",
+          "groups": "all",
+          "route": "/api/v1/admin/authors",
+          "method": "get"
+        },
+        {
+          "description": "Update an author",
+          "link": "admin/authors/update_an_author.json",
+          "groups": "all",
+          "route": "/api/v1/admin/authors/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Admin/Books",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create a book",
+          "link": "admin/books/create_a_book.json",
+          "groups": "all",
+          "route": "/api/v1/admin/books",
+          "method": "post"
+        },
+        {
+          "description": "Delete a book",
+          "link": "admin/books/delete_a_book.json",
+          "groups": "all",
+          "route": "/api/v1/admin/books/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Get a book",
+          "link": "admin/books/get_a_book.json",
+          "groups": "all",
+          "route": "/api/v1/admin/books/:id",
+          "method": "get"
+        },
+        {
+          "description": "List all books",
+          "link": "admin/books/list_all_books.json",
+          "groups": "all",
+          "route": "/api/v1/admin/books",
+          "method": "get"
+        },
+        {
+          "description": "Update a book",
+          "link": "admin/books/update_a_book.json",
+          "groups": "all",
+          "route": "/api/v1/admin/books/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create a comment",
+          "link": "comments/create_a_comment.json",
+          "groups": "all",
+          "route": "/api/v1/posts/:post_id/comments",
+          "method": "post"
+        },
+        {
+          "description": "Delete a comment",
+          "link": "comments/delete_a_comment.json",
+          "groups": "all",
+          "route": "/api/v1/posts/:post_id/comments/:id",
+          "method": "delete"
+        }
+      ]
+    },
+    {
+      "name": "Posts",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create a post",
+          "link": "posts/create_a_post.json",
+          "groups": "all",
+          "route": "/api/v1/posts",
+          "method": "post"
+        },
+        {
+          "description": "Delete a post",
+          "link": "posts/delete_a_post.json",
+          "groups": "all",
+          "route": "/api/v1/posts/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Get a specific post",
+          "link": "posts/get_a_specific_post.json",
+          "groups": "all",
+          "route": "/api/v1/posts/:id",
+          "method": "get"
+        },
+        {
+          "description": "List all posts",
+          "link": "posts/list_all_posts.json",
+          "groups": "all",
+          "route": "/api/v1/posts",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}
